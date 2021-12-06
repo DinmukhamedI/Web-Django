@@ -1,0 +1,24 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}Story of sells{% endblock %}
+
+{% block content %}
+<style>
+.alert-warning{
+    margin: 10px;
+    clear: both;
+    width: 400px;
+    text-align: center;
+</style>
+<div class="container">
+    {% for el in story %}
+        <div class = "alert alert-warning">
+            <h3>{{ el.username }}</h3>
+            <p>{{ el.mail }}</p>
+            <p>{{ el.date }}</p>
+            <p>{{ el.product }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

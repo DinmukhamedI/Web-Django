@@ -1,0 +1,218 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}Home page{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href = "{% static 'main/css/index.css' %}">
+<div class="container mt-3">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+    	<li data-target="#demo" data-slide-to="0" class="active"></li>
+    	<li data-target="#demo" data-slide-to="1"></li>
+    	<li data-target="#demo" data-slide-to="2"></li>
+  		</ul>
+  		<!-- The slideshow -->
+  		<div class="carousel-inner">
+			<div class="carousel-item active">
+	   			<img src="{% static 'main/img/logitech.jpg' %}" alt="" width="900" height="500">
+			</div>
+			<div class="carousel-item">
+	   			<img src="{% static 'main/img/Karcher.jpg' %}" alt="" width="900" height="500">
+			</div>
+			<div class="carousel-item">
+	   			<img src="{% static 'main/img/skidki.png' %}" alt="" width="900" height="500">
+			</div>
+  		</div>
+  		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    	<span class="carousel-control-prev-icon"></span>
+  		</a>
+ 	 	<a class="carousel-control-next" href="#demo" data-slide="next">
+    	<span class="carousel-control-next-icon"></span>
+  		</a>
+	</div>
+</div>
+<div class="container mt-3">
+	<div class="btn-group d-flex justify-content-center ">
+    	<button type="button" class="btn btn-success">Sale</button>
+    	<button type="button" class="btn btn-success">Hit of Sales</button>
+    	<button type="button" class="btn btn-success">New</button>
+  	</div>
+	<div class="row mt-3">
+		<div class="col-md-3">
+			<div class="shop card rounded-start">
+			    <div class="shop card-image">
+			        <img class="img-fluid" src="{% static 'main/img/Holodos.jpeg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">LG</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">B509CESL</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+			        <img class="img-fluid" src="{% static 'main/img/SamsungA70.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Samsung</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">Galaxy A-70</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+			        <img class="img-fluid" src="{% static 'main/img/airpods.pro.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Apple</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">Airpord Pro</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+			        <img class="img-fluid" src="{% static 'main/img/Upakovchik.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">PROFTORG</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">Packer</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+					<span class="percent text-center">-25%</span>
+			        <img class="img-fluid" src="{% static 'main/img/indesitmicr.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Indesit</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">Microwave oven</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+					<span class="percent text-center">-25%</span>
+			        <img class="img-fluid" src="{% static 'main/img/machinka.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Berhina</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">500</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+					<span class="percent text-center">-25%</span>
+			        <img class="img-fluid" src="{% static 'main/img/batareia.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Luxstahl</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">FT1L</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="shop card rounded">
+			    <div class="shop card-image">
+					<span class="percent text-center">-25%</span>
+			        <img class="img-fluid" src="{% static 'main/img/Zharovnia.jpg' %}" />
+			    </div>
+			    <div class="shop card-body text-left">
+			    	<div class="sh-price m-auto">
+			            <span class="price">9 900 ₸</span>
+			    	</div>
+			    	<div class="sh-brand mt-2">
+			            <span class="brandName">Zharovnia</span>
+			    	</div>
+			    	<div class="sh-type m-auto">
+			        	<span class="tsh">SampleComp</span>
+			    	</div>
+			    	<div class="sh-but mt-2">
+			        	<button type="button" class="btn btn-success">Buy</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
